@@ -6,15 +6,20 @@
     <link rel="stylesheet" href="GameStyle.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="timer()">
     <header>
         <h1 class="HeaderItem" id="NameText">Hello {name} Lets start playing</h1>
-        <svg>
-            <polygon points="0,0 10,0 10,10 5,15 0,10"> </polygon>
-            <polygon points="0,35 0,25 5,20 10,25 10,35"> </polygon>
-        </svg>
-        <p class="HeaderItem" id="ScoreText">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</p>
+        <div id="scoreContainer">
+            <svg id="scorePointer">
+                <polygon class="polScore" points="10,0 20,0 20,10 15,15 10,10"> </polygon>
+                <polygon class="polScore" points="10,50 10,40 15,35 20,40 20,50"> </polygon>
+            </svg>
+            <p class="HeaderItem" id="ScoreText">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</p>
+        </div>
+        <p class="HeaderItem" id="timer">00:00</p>
     </header>
+    <button style="z-index: 10;" onclick="addScore()">asdasdasda</button>
     <footer></footer>
+    <script src="GameScript.js"></script>
 </body>
 </html>
