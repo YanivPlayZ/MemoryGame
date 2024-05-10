@@ -19,7 +19,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top:0;
 }
 footer{
@@ -55,6 +55,7 @@ footer{
     background-color: bisque;
 }
 #scorePointer{
+    padding: 0 10px 0 10px;
     display: flexbox;
     position: absolute;
     height: 50px;
@@ -62,4 +63,10 @@ footer{
 #timer{
     font-size: 20px;
     font-weight: bold;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
 }
